@@ -1,6 +1,6 @@
 <template>
   <div class="app-wrapper">
-    <Header/>
+    <Header />
     <router-view class="router-view" />
     <Footer />
   </div>
@@ -10,18 +10,9 @@
 import Header from './components/inc/Header.vue'
 import Footer from './components/inc/Footer.vue'
 
-import { mapGetters } from 'vuex'
-
 export default {
   name: 'App',
-  components: { Header, Footer },
-  // computed: {
-  //   ...mapGetters(['GET_COORDS'])
-  // },
-  created () {
-    console.log(...mapGetters(['GET_COORDS']))
-    // this.$store.dispatch('ACT_COORDS')
-  }
+  components: { Header, Footer }
 }
 </script>
 
