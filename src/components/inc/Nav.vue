@@ -1,9 +1,9 @@
 <template>
-  <ul>
-    <li>
+  <ul class="navi-wrap">
+    <li class="navi">
       <router-link to="/">Daily</router-link>
       </li>
-    <li>
+    <li class="navi">
       <router-link to="/5days">5Days</router-link>
       </li>
   </ul>

@@ -10,9 +10,18 @@
 import Header from './components/inc/Header.vue'
 import Footer from './components/inc/Footer.vue'
 
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'App',
-  components: { Header, Footer }
+  components: { Header, Footer },
+  // computed: {
+  //   ...mapGetters(['GET_COORDS'])
+  // },
+  created () {
+    console.log(...mapGetters(['GET_COORDS']))
+    // this.$store.dispatch('ACT_COORDS')
+  }
 }
 </script>
 
