@@ -14,10 +14,12 @@ export default {
   components: { Nav, Logo },
   data () {
     return {
+
     }
   }
 }
 </script>
+
 <style lang="scss" scoped>
 .header-wrapper {
   @include flex($h: space-between);

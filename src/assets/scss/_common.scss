@@ -1,4 +1,4 @@
-@import './mixins';
+@import './animation';
 
 html, body, h1, h2, h3, h4, h5, h6, p, div, form, /* input, textarea, */ table, td, th, header, section, aside, footer, article, nav, ul, ol, li {margin: 0; padding: 0; box-sizing: border-box; line-height: 1; font-size: inherit; font-weight: inherit;}
 ul, ol {list-style: none;}
@@ -7,7 +7,14 @@ img {vertical-align: middle;}
 table {border-spacing: 0; border-collapse: collapse;}
 input, input:focus {outline: none;}
 
-a {color: inherit; text-decoration: none;}
+a {
+  color: inherit; 
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
 
 .clear::after {display: block; content: ''; clear: both;}
 

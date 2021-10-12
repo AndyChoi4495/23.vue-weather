@@ -1,11 +1,11 @@
 <template>
   <ul class="navi-wrap">
-    <li class="navi">
+    <li>
       <router-link to="/">Daily</router-link>
-      </li>
-    <li class="navi">
+    </li>
+    <li>
       <router-link to="/5days">5Days</router-link>
-      </li>
+    </li>
   </ul>
 </template>
 
@@ -16,18 +16,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
+ul.navi-wrap {
   @include flex;
   li {
-    font-size:  .75em;
+    font-size: .75em;
     cursor: pointer;
     a {
       display: block;
       padding: .875em 1.25em;
-      &:hover {
-        color: inherit;
-        text-decoration: none;
-      }
     }
     &:hover {
       background-color: $secondary-color;

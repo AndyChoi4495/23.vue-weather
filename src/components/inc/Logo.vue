@@ -1,9 +1,11 @@
 <template>
   <h1 class="logo">
+    <router-link to="/">
       <i class="fa fa-sun" />
       날씨앱
       <small>v 0.1</small>
-    </h1>
+    </router-link>
+  </h1>
 </template>
 
 <script>
@@ -14,6 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 h1.logo {
-  padding: .5em;
+  a {
+    display: block;
+    padding: .5em;
+  }
 }
 </style>

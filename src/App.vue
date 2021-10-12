@@ -1,7 +1,9 @@
 <template>
   <div class="app-wrapper">
     <Header />
-    <router-view class="router-view" />
+    <transition name="slide" mode="out-in">
+      <router-view class="router-view" />
+    </transition>
     <Footer />
   </div>
 </template>
@@ -18,6 +20,8 @@ export default {
 
 <style lang="scss">
 .app-wrapper {
+  width: 100%;
+  overflow: hidden;
   height: 100vh;
   @include flex;
   @include flexCol;
