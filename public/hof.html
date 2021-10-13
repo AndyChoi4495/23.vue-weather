@@ -1,0 +1,31 @@
+<script>
+// High Order Function - 고차함수
+
+function sumFn(a, b) {
+  var v = a + b;
+  console.log('SUM => ', v)
+}
+
+function subFn(a, b) {
+  var v = a - b;
+  console.log('SUB => ', v)
+}
+
+// H.O.F
+function sum(a, b) {
+  return a + b;
+}
+
+function sub(a, b) {
+  return a - b;
+}
+
+function withCalculator(calcFn) { 
+  return function (a, b, title) {
+    var v = calcFn(a, b);
+    console.log(title, ' => ', v)
+  }
+}
+
+withCalculator(sub)(10, 20, 'SUB')
+</script>
