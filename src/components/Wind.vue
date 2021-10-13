@@ -7,19 +7,13 @@
 </template>
 
 <script>
+import { withComputed } from './mixins/mixinComputed'
+
 export default {
   name: 'Wind',
   props: ['deg', 'speed', 'styled'],
+  mixins: [withComputed],
   computed: {
-    style: function () {
-      if (this.styled) {
-        return `
-          font-size: ${this.styled.size || 'inherit'};
-          color: ${this.styled.color || 'inherit'};`
-      } else {
-        return ''
-      }
-    },
     angle: function () {
       return `transform: rotate(${this.deg}deg)`
     },

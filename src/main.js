@@ -4,7 +4,7 @@ import Vue from 'vue'
 // import App from './03.Weather.vue'
 // import App from './04.Weather.vue'
 import App from './App.vue'
-import router from './router'
+import router from './routers'
 import store from './store'
 import { BootstrapVue } from 'bootstrap-vue'
 
