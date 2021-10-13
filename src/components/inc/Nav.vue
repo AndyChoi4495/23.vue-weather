@@ -6,6 +6,12 @@
     <li>
       <router-link to="/5days">5Days</router-link>
     </li>
+    <li>
+      <router-link to="/users">Users</router-link>
+    </li>
+    <li>
+      <router-link to="/posts">Posts</router-link>
+    </li>
   </ul>
 </template>
 

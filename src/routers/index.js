@@ -8,6 +8,8 @@ import Daily from '../views/Daily.vue'
 // 지연 로딩
 // const Daily = () => import('../views/Daily.vue')
 const Days = () => import('../views/Days.vue')
+const Posts = () => import('../views/PostCp.vue')
+const Users = () => import('../views/UserCp.vue')
 
 Vue.use(VueRouter)
 
@@ -21,6 +23,16 @@ const routes = [
     path: '/5days',
     name: 'Days',
     component: Days
+  },
+  {
+    path: '/users',
+    name: 'Users',
+    component: Users
+  },
+  {
+    path: '/posts',
+    name: 'Posts',
+    component: Posts
   }
 ]
 
