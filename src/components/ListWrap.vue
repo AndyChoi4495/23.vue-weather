@@ -5,17 +5,16 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import List from './List.vue'
 
 export default {
   name: 'ListWrap',
   components: { List },
+  props: ['days'],
   computed: {
-    ...mapGetters(['GET_DAYS']),
     val: function () {
-      return Number(this.GET_DAYS.cod) === 200
-        ? this.GET_DAYS.list
+      return Number(this.days.cod) === 200
+        ? this.days.list
         : []
     }
   }
