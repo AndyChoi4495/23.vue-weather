@@ -5,5 +5,12 @@ module.exports = {
         prependData: '@import "@/assets/scss/_common.scss";'
       }
     }
+  },
+  configureWebpack: {
+    optimization: {
+      splitChunks: {
+        maxSize: 1024000
+      }
+    }
   }
 }

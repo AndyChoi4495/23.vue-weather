@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <Header />
-    <transition name="scale" mode="out-in">
+    <transition name="slide-scale" mode="out-in">
       <router-view class="router-view" />
     </transition>
     <Footer />
