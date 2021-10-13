@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'City',
+  name: 'Temp',
   props: ['temp', 'styled'],
   computed: {
     style: function () {

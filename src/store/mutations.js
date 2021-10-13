@@ -8,5 +8,8 @@ export default {
   },
   MUT_DAYS (state, v) {
     state.days = v
+  },
+  MUT_CITY (state, v) {
+    state.city = v
   }
 }
