@@ -9,7 +9,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="v in posts" :key="v.id">
+        <tr v-for="v in lists" :key="v.id">
           <td>{{ v.id }}</td>
           <td>{{ v.title }}</td>
           <td>{{ v.body }}</td>
@@ -20,20 +20,9 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'Posts',
-  data () {
-    return {
-      posts: []
-    }
-  },
-  async created () {
-    const url = 'https://jsonplaceholder.typicode.com/posts'
-    const { data } = await axios.get(url)
-    this.posts = data
-  }
+  props: ['lists']
 }
 </script>
 
